@@ -30,3 +30,7 @@ The physics suite covers acceleration, zero gravity and boundary bounces. The SD
 ## Limitations
 
 The simulation uses pixel units, simplified boundary collisions and independent particles. It does not simulate collisions between particles.
+
+## Screenshot
+
+Open the latest successful [Actions run](https://github.com/kolawolesolomon/gravity-lab/actions/workflows/tests.yml) and download `gravity-lab-preview` from **Artifacts** to see a screenshot captured from the running application.
