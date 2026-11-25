@@ -17,3 +17,11 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest -v
       - run: python -m py_compile main.py physics.py
+      - name: Verify Pygame rendering and input
+        if: runner.os == 'Linux'
+        run: python smoke_render.py
+      - uses: actions/upload-artifact@v4
+        if: runner.os == 'Linux'
+        with:
+          name: gravity-lab-preview
+          path: gravity-lab.png
